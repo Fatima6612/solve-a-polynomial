@@ -1,0 +1,25 @@
+#include<iostream>;
+#include<conio.h>;
+using namespace std;
+
+int main()
+{
+
+	int x=0;
+	double poly = 0;
+	int exp = 0, exp2=0;
+	double power=0, power2=0;
+	exp = 5;
+	exp2 = 4;
+
+	cout << "Enter number x: ";
+	cin >> x;
+	power = pow(x, exp);
+	power2 = pow(x, exp2);
+	poly = (2 * power) + (3 *power2) -( x * x * x) - (2 * x * x )+ (7 * x) - 6;
+
+	cout << "Answer is: "<<poly;
+
+	return 0;
+
+}
